@@ -1,9 +1,27 @@
-var first_name = "Dhruv";
-var last_name = "Rastogi";
-var full_name = first_name.concat(last_name);
-console.log(full_name);
+var names = [
+"My father (Mr Naresh Rastogi)",
+"My Mother (Mrs Sonia Rastogi)",
+"My Sister (Ms Vasihnavi Rastogi)",
+"Me (Dhruv Rastogi)"];
 
-var a = 200;
-var b = 200;
-var plus = Math.add = a+b;
-console.log(plus);
+var images = [
+"img2.jpeg",
+"img1.jpeg",
+"img3.jpeg",
+"img4.jpeg"];
+
+var i = 0 ;
+
+function next_img() {
+    i++;
+
+document.getElementById("one").innerHTML = names[i];
+document.getElementById("family_img").src = images[i];
+if(i==4) {
+
+i=0;
+
+}}
+
+
+
